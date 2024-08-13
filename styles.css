@@ -13,19 +13,109 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding-top: 30px;
     min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px 200px;
+    img {
+        width: 4rem;
+        border-radius: 100%;
+    }
+    div{
+        display: flex;
+        gap: 1rem;
+        a{
+            color: white;
+        }
+    }
 }
-header h1 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 24px;
+.box-container{
+    width: 100%;
+    height: 300px;
+    background-color: #707070;
 }
+
 main {
-    padding: 20px;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    section{
+        width: 50%; 
+        max-width: 700px; 
+        margin-bottom: 20px;
+    }
+    .section-1{
+        display: flex;
+        background: #fff;
+        width: 100%;
+        .photo-group{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 6rem;
+            gap: 1rem;
+            .links-sites{
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                .link-one{
+                    width: 2rem;
+                    height: full;
+                    border-radius: 100%;
+                }
+            }
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            left: 15rem;
+            bottom: 1rem;
+            h2{
+                font-size: xx-large;
+                padding-top: 20px;
+                margin: 0;
+            }
+            
+            h3 {
+                padding-top: 4px;
+                margin: 0;
+            }
+            p{
+                padding-top: 0;
+                margin: 0;
+                width: 400px;
+                text-align: left;
+            }
+
+    }
+}}
+.section-2{
+    background-color: #DEDEDE;
+    width: 100%;
+    color: #707070;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    h3{
+        font-size: xx-large;
+        display: flex;
+        color: #707070;
+    }
+    .section-content-1{
+        border-left: solid 2px black;
+        margin-left: 1rem;
+        ul{
+            padding-left: 1rem;
+            list-style: none;
+            .meio{
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+        }
+    }
 }
 .profile-pic {
     display: block;
@@ -40,20 +130,106 @@ h2, h3 {
 p {
     text-align: center;
 }
-.section-title {
-    background: #77aaff;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin: 20px 0 10px 0;
+.projetos{
+    display: flex;
+    gap: 1rem;
+    .section-projetos{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 1rem;
+        img{
+            width: 10rem;
+        }
+        div{
+            display: flex;
+            gap: 3px;
+        }
+        p{
+            text-align: left;
+        }
+        button{
+            background-color: #585858;
+            color: white;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 2px;
+            a{
+                text-decoration: none; 
+                color: white;
+                padding: 3px;
+
+            }
+
+        }
+    }
 }
-.section-content {
-    padding: 10px;
+footer{
+    background-color: black;
+    color: white;
 }
-footer {
-    background: #333;
+
+.section-footer {
+    background: black;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    display: flex;
+    .primeira-parte{
+        display: flex;
+        flex-direction: column;
+        p{
+            text-align: left;
+            margin-top: 0;
+        };
+        .imagens-redes{
+            padding-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            picture{
+                text-align: center;
+                img{
+                    width: 3rem;
+                }
+                p{
+                    font-size: small;
+                }
+            }
+        }
+    }
+    .form-ready {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .input-label {
+                position: absolute;
+                left: 0;
+                font-size: 14px;
+                color: white;
+            }
+            
+            input[type="text"] {
+                padding: 10px;
+                margin-top: 20px; 
+            }
+        }
+        .ultimo-boton{
+            display: flex;
+            justify-content: center;
+            button{
+                background-color: #585858;
+                color: white;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+
+            }
+        }
+    }
+    
+    
 }
