@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -78,33 +79,7 @@
         <section>
             <h3 class="section-title">Projetos</h3>
             <div class="projetos">
-                <div class="section-projetos">
-                    <img src="https://raw.githubusercontent.com/devHyrum/Sunnyside-Agency-Landing-Page/master/public/Desktop-Design.png" alt="">
-                    <h1>Project 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
-                    <div>
-                        <button><a href="https://github.com/devHyrum/Sunnyside-Agency-Landing-Page">REPÓSITORIO</a></button>
-                        <button>VER DEMO</button>
-                    </div>
-                </div>
-                <div class="section-projetos">
-                    <img src="https://raw.githubusercontent.com/devHyrum/Sunnyside-Agency-Landing-Page/master/public/Desktop-Design.png" alt="">
-                    <h1>Project 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
-                    <div>
-                        <button><a href="https://github.com/devHyrum/Sunnyside-Agency-Landing-Page">REPÓSITORIO</a></button>
-                        <button>VER DEMO</button>
-                    </div>
-                </div>
-                <div class="section-projetos">
-                    <img src="https://raw.githubusercontent.com/devHyrum/Sunnyside-Agency-Landing-Page/master/public/Desktop-Design.png" alt="">
-                    <h1>Project 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
-                    <div>
-                        <button><a href="https://github.com/devHyrum/Sunnyside-Agency-Landing-Page">REPÓSITORIO</a></button>
-                        <button>VER DEMO</button>
-                    </div>
-                </div>
+                <!--Aqui está os dados puxados da API GitHub-->
             </div>
         </section>
         
@@ -132,28 +107,30 @@
                     </div>
                 </div>
                 <div class="form-ready">
-                    <label for="nome">
-                        <span class="input-label">Nome:</span>
-                        <input type="text" id="nome1">
-                    </label>
-                    <label for="nome">
-                        <span class="input-label">Email:</span>
-                        <input type="text" id="nome2">
-                    </label>
-                    <label for="nome">
-                        <span class="input-label">Assunto:</span>
-                        <input type="text" id="nome3">
-                    </label>
-                    <label for="nome">
-                        <span class="input-label">Mensagem:</span>
-                        <input type="text">
-                    </label>
-                    <div class="ultimo-boton">
-                        <button>Enviar</button>
-                    </div>
-                    
+                    <form id="contact-form">
+                        <label for="nome1">
+                            <span class="input-label">Nome:</span>
+                            <input type="text" id="nome1" required>
+                        </label>
+                        <label for="nome2" class="email-unico">
+                            <span class="input-label" id="email-span">Email:</span>
+                            <input type="email" id="nome2" required>
+                        </label>
+                        <label for="nome3">
+                            <span class="input-label">Assunto:</span>
+                            <input type="text" id="nome3" required>
+                        </label>
+                        <label for="nome4">
+                            <span class="input-label">Mensagem:</span>
+                            <input type="text" id="nome4">
+                        </label>
+                        <div class="ultimo-boton">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
     </footer>
+
 </body>
 </html>

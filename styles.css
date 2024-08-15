@@ -233,3 +233,9 @@ footer{
     
     
 }
+.email-unico{
+    padding-top: 5px;
+}
+#email-span{
+    position: relative;
+}
