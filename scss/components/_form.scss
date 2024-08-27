@@ -1,0 +1,33 @@
+.form-ready {
+    flex-direction: column;
+    gap: 10px;
+  
+    label {
+      flex-direction: column;
+      position: relative;
+  
+      .input-label {
+        position: absolute;
+        left: 0;
+        font-size: 14px;
+        color: white;
+      }
+  
+      input[type="text"] {
+        padding: 10px;
+        margin-top: 20px;
+      }
+    }
+  
+    .ultimo-boton {
+      @include flex-center;
+  
+      button {
+        background-color: $secondary-color;
+        color: white;
+        border-radius: $border-radius;
+        padding: 10px;
+      }
+    }
+  }
+  

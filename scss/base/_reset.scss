@@ -1,0 +1,27 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza as fontes para uma base consistente */
+  body {
+    font-family: $font-family;
+  }
+  
+  /* Remove sublinhado dos links */
+  a {
+    text-decoration: none;
+    color: inherit; // Herda a cor do elemento pai
+  }
+  
+  /* Configura a altura e a largura padrão dos elementos de formulário */
+  input,
+  button,
+  textarea {
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+  

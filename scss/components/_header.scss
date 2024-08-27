@@ -1,0 +1,23 @@
+header {
+    background: $primary-color;
+    color: white;
+    min-height: $header-height;
+    @include flex-center;
+    justify-content: space-between;
+    padding: 0 200px;
+    
+    img {
+      width: 4rem;
+      border-radius: 50%;
+    }
+  
+    div {
+      @include flex-center;
+      gap: 1rem;
+  
+      a {
+        color: white;
+      }
+    }
+  }
+  
