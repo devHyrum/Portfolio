@@ -7,7 +7,6 @@ main {
     section {
       width: 50%;
       max-width: 700px;
-      margin-bottom: 20px;
     }
   
     .section-1 {
@@ -35,3 +34,12 @@ main {
     }
   }
   
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $primary-color;
+}

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Estilos para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Estilos para parágrafos */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para links */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: #333;
+  color: white;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  font-family: "Poppins", sans-serif;
+}
+header img {
+  width: 4rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  padding: 3px;
+  border: solid 1px white;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header div a {
+  color: white;
+  text-decoration: none;
+}
+header div a:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, border-bottom, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, border-bottom, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, border-bottom, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transform: translatey(0.375rem);
+  text-decoration: none;
+  border-bottom: solid 1px white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.section-footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-footer .primeira-parte {
+  flex-direction: column;
+}
+.section-footer .primeira-parte p {
+  text-align: left;
+  margin-top: 0;
+}
+.section-footer .primeira-parte .imagens-redes {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.section-footer .primeira-parte .imagens-redes picture {
+  text-align: center;
+}
+.section-footer .primeira-parte .imagens-redes picture img {
+  width: 3rem;
+}
+.section-footer .primeira-parte .imagens-redes picture p {
+  font-size: small;
+}
+
+.form-ready {
+  flex-direction: column;
+  gap: 10px;
+}
+.form-ready label {
+  flex-direction: column;
+  position: relative;
+}
+.form-ready label .input-label {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: white;
+}
+.form-ready label input[type=text] {
+  padding: 10px;
+  margin-top: 20px;
+}
+.form-ready .ultimo-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-ready .ultimo-boton button {
+  background-color: #585858;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main section {
+  width: 50%;
+  max-width: 700px;
+}
+main .section-1 {
+  display: flex;
+  background: white;
+  width: 100%;
+}
+main .section-1 .photo-group {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 6rem;
+  gap: 1rem;
+}
+main .section-1 .photo-group .links-sites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .section-1 .photo-group .links-sites .link-one {
+  width: 2rem;
+  border-radius: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}/*# sourceMappingURL=styles.css.map */
