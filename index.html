@@ -6,11 +6,21 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./scss/styles.css">
     <script src="main.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
-    <header>
-        <img src="./scss/assets/images/fullStackLogo.svg" alt="photoGitHub">        
+    <header data-aos="fade-down">
+        <svg class="iconHeader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 32.5" version="1.1" x="0px" y="0px">
+            <title>Desenvolvedor Full-Stack</title>
+            <desc>Created with Sketch.</desc>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-21.000000, -200.000000)" fill="#f4f4f4" fill-rule="nonzero">
+                    <path d="M44.8589476,218.2104 C45.1882586,218.932442 44.9212993,219.810439 44.2626773,220.171461 L34.1925406,225.691371 C33.4418189,226.102876 32.5581811,226.102876 31.8074594,225.691371 L21.7373227,220.171461 C21.0787007,219.810439 20.8117414,218.932442 21.1410524,218.2104 C21.4703634,217.488357 22.2712413,217.195692 22.9298632,217.556713 L33,223.076623 L43.0701368,217.556713 C43.7287587,217.195692 44.5296366,217.488357 44.8589476,218.2104 Z M44.8589476,212.363646 C45.1882586,213.085689 44.9212993,213.963686 44.2626773,214.324707 L34.1925406,219.844617 C33.4418189,220.256123 32.5581811,220.256123 31.8074594,219.844617 L21.7373227,214.324707 C21.0787007,213.963686 20.8117414,213.085689 21.1410524,212.363646 C21.4703634,211.641603 22.2712413,211.348938 22.9298632,211.709959 L33,217.229869 L43.0701368,211.709959 C43.7287587,211.348938 44.5296366,211.641603 44.8589476,212.363646 Z M34.0830095,200.251961 L42.7998448,204.499164 C43.4031168,204.793103 43.8854858,205.321921 44.1536067,205.983284 C44.7517364,207.458666 44.1456365,209.186269 42.7998448,209.841995 L34.0830095,214.089197 C33.3935187,214.425146 32.6064813,214.425146 31.9169905,214.089197 L23.2001552,209.841995 C22.5968832,209.548056 22.1145142,209.019238 21.8463933,208.357875 C21.2482636,206.882493 21.8543635,205.154889 23.2001552,204.499164 L31.9169905,200.251961 C32.6064813,199.916013 33.3935187,199.916013 34.0830095,200.251961 Z"/>
+                </g>
+            </g>
+        </svg>
         <div>
             <a href="#Apresentação">Apresentação</a>
             <a href="#Formação">Formação</a>
@@ -20,10 +30,10 @@
         </div>
     </header>
 
-    <div class="box-container"></div>
+    <div class="box-container" data-aos="fade-left"></div>
 
     <main>
-        <section class="section-1" id="Apresentação">
+        <section class="section-1" id="Apresentação" data-aos="fade-right">
             <div class="box-middle">
                 <div class="photo-group">
                     <img src="./scss/assets/images/photoUser.png" alt="Minha Foto" class="profile-pic">
@@ -42,9 +52,9 @@
             </div>
         </section>
 
-        <section class="section-2" id="Formação">
+        <section class="section-2" id="Formação" data-aos="fade-right">
             <div class="box-middle">
-                <h3 class="section-title">Formação</h3>
+                <h3 class="section-title"><img src="./scss/assets/images/formacao.svg" alt="formacao">Formação</h3>
                 <div class="section-content-1">
                     <ul>
                         <li>2023-2025</li>
@@ -76,9 +86,9 @@
             </div>
         </section>
 
-        <section class="section-3" id="Experiência">
+        <section class="section-3" id="Experiência" data-aos="fade-right">
             <div class="box-middle">
-                <h3 class="section-title">Experiência</h3>
+                <h3 class="section-title"><img src="./scss/assets/images/experiencia.svg" alt="experiencia">Experiência</h3>
                 <div class="section-content-1">
                     <ul>
                         <li>2022-2024</li>
@@ -103,9 +113,9 @@
             </div>
         </section>
         
-        <section class="section-4" id="Projetos">
+        <section class="section-4" id="Projetos" data-aos="fade-right">
             <div class="box-middle">
-                <h3 class="section-title">Projetos</h3>
+                <h3 class="section-title"><img src="./scss/assets/images/project.svg" alt="project">Projetos</h3>
                 <div class="projetos">
                     <!--Aqui está os dados puxados da API GitHub-->
                 </div>
@@ -113,7 +123,7 @@
         </section>
     </main>
 
-    <footer id="fale-comigo">
+    <footer id="fale-comigo" data-aos="fade-up">
         <div class="box-middle">
             <h3 class="section-title">Contato</h3>
             <div class="section-footer">
@@ -162,6 +172,8 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -9,6 +9,7 @@ Bem-vindo ao meu portfólio pessoal! Este é um projeto que exibe minha trajetó
 - **SCSS (Sass)**: Pré-processador CSS para organizar e facilitar o desenvolvimento dos estilos.
 - **JavaScript**: Para adicionar interatividade ao site.
 - **Google Fonts**: Integração com fontes externas.
+- **AOS (Animate On Scroll)**: Animação de transição(https://michalsnik.github.io/aos/)
 
 ## Estrutura do Projeto
 
@@ -26,11 +27,11 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/devHyrum/portfolio-pessoal.git
+   git clone https://github.com/devHyrum/Portfolio.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd portfolio-pessoal
+   cd Portfolio
    ```
 3. Certifique-se de que você tem um servidor local para visualizar o projeto (pode usar o Live Server no VSCode, por exemplo).
 4. Abra o arquivo index.html no seu navegador ou sirva o projeto em um servidor local.
