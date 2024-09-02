@@ -1,8 +1,8 @@
 .box-container {
   background-image: url('./assets/images/wallpaper.jpg');
-  background-size: cover; /* Escala a imagem para cobrir todo o container */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 50%;
-  filter: blur(2px);
+  // filter: blur(2px);
 }

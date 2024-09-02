@@ -54,7 +54,7 @@ main {
         }
       }
       }
-      /* Media query para resoluções menores */
+
     @media (max-width: 768px) {
       .box-middle {
           flex-direction: column;
@@ -62,7 +62,7 @@ main {
 
 
           article {
-              width: 100%; /* Ajusta o article para preencher todo o espaço */
+              width: 100%; 
               position: relative;
               bottom: 9rem;
           }
@@ -153,7 +153,6 @@ main {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 5px;
             position: relative;
-            overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             &:hover {
               transform: scale(1.05);
@@ -163,7 +162,7 @@ main {
             img{
               width: 100%;
               height: auto;
-              
+              // border-radius: 5px;
             }
             h5{
               margin: 0;
@@ -177,6 +176,7 @@ main {
                 background-color: $secondary-color;
                 border: 0;
                 padding: 5px 7px 5px 7px;
+                margin-bottom: 0.3rem;
                 border-radius: 5px;
                 &:hover{
                   background-color: rgb(54, 54, 129);

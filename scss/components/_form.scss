@@ -14,8 +14,25 @@
         margin-top: 13px;
         font-size: 10px;
       }
-      #nome4{
-        height: 50px
+      input{
+        border: 0;
+        outline: none;
+        padding: 5px;
+        background-color: white;
+        border-radius: 2px;
+      }
+      textarea { 
+        border: 0;
+        outline: none;
+        padding: 5px;
+        background-color: white;
+        border-radius: 2px;
+        height: 50px;
+        resize: vertical;
+        overflow-y: auto; 
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left; 
       }
     }
   

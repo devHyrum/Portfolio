@@ -10,6 +10,7 @@ Bem-vindo ao meu portfólio pessoal! Este é um projeto que exibe minha trajetó
 - **JavaScript**: Para adicionar interatividade ao site.
 - **Google Fonts**: Integração com fontes externas.
 - **AOS (Animate On Scroll)**: Animação de transição(https://michalsnik.github.io/aos/)
+- **Netlify Forms**: Netlify hospeda o site e usa o recurso de formulários integrado do Netlify.
 
 ## Estrutura do Projeto
 
