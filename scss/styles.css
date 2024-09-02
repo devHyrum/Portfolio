@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Estilos para cabeçalhos */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -18,6 +18,7 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  font-weight: 200;
 }
 
 h4 {
@@ -26,6 +27,7 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+  text-align: start;
 }
 
 h6 {
@@ -43,6 +45,7 @@ p {
 a {
   color: #333;
   text-decoration: none;
+  text-transform: uppercase;
 }
 a:hover {
   text-decoration: underline;
@@ -60,11 +63,8 @@ header {
   font-family: "Poppins", sans-serif;
 }
 header img {
-  width: 4rem;
-  border-radius: 50%;
-  margin: 0.5rem;
-  padding: 3px;
-  border: solid 1px white;
+  width: 3rem;
+  margin-top: 9px;
 }
 header div {
   display: flex;
@@ -87,59 +87,88 @@ header div a:hover {
   border-bottom: solid 1px white;
 }
 
+@media (max-width: 768px) {
+  header {
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  header img {
+    width: 20px;
+  }
+  header a {
+    font-size: 8px;
+  }
+}
 footer {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.box-middle {
+  width: 50%;
 }
 
 .section-footer {
   background: black;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .section-footer .primeira-parte {
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 .section-footer .primeira-parte p {
   text-align: left;
-  margin-top: 0;
+  margin-top: 1rem;
+  color: #707070;
+  font-size: 12px;
 }
 .section-footer .primeira-parte .imagens-redes {
   padding-top: 1rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
   gap: 1rem;
 }
 .section-footer .primeira-parte .imagens-redes picture {
   text-align: center;
 }
 .section-footer .primeira-parte .imagens-redes picture img {
-  width: 3rem;
+  width: 30px;
+  border-radius: 3px;
 }
 .section-footer .primeira-parte .imagens-redes picture p {
-  font-size: small;
+  margin: 0;
+  font-size: 9px;
+  text-align: center;
 }
 
 .form-ready {
+  display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 .form-ready label {
+  display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+  width: auto;
 }
-.form-ready label .input-label {
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-  color: white;
+.form-ready label span {
+  text-transform: uppercase;
+  margin-top: 13px;
+  font-size: 10px;
 }
-.form-ready label input[type=text] {
-  padding: 10px;
-  margin-top: 20px;
+.form-ready label #nome4 {
+  height: 50px;
 }
 .form-ready .ultimo-boton {
   display: flex;
@@ -151,45 +180,202 @@ footer {
   color: white;
   border-radius: 10px;
   padding: 10px;
+  margin: 1rem 0rem 2rem 0rem;
+  border: 0;
+  cursor: pointer;
+}
+.form-ready .ultimo-boton button:hover {
+  background-color: rgb(54, 54, 129);
+  transition: 500ms;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+.box-container {
+  background-image: url("./assets/images/wallpaper.jpg");
+  background-size: cover; /* Escala a imagem para cobrir todo o container */
+  background-position: center; /* Centraliza a imagem */
+  width: 100%;
+  height: 50%;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-}
-main section {
-  width: 50%;
-  max-width: 700px;
 }
 main .section-1 {
-  display: flex;
-  background: white;
   width: 100%;
-}
-main .section-1 .photo-group {
+  background: white;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 6rem;
+  justify-content: center;
+  color: #707070;
+  /* Media query para resoluções menores */
+}
+main .section-1 .box-middle {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
-main .section-1 .photo-group .links-sites {
+main .section-1 .box-middle .photo-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  bottom: 6rem;
+  height: auto;
+}
+main .section-1 .box-middle .photo-group .profile-pic {
+  width: 14rem;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+main .section-1 .box-middle .photo-group .links-sites {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-main .section-1 .photo-group .links-sites .link-one {
+main .section-1 .box-middle .photo-group .links-sites a {
+  position: relative;
+  bottom: 40px;
+  height: 2rem;
+  width: 2rem;
+  margin: 0;
+  padding: 0;
+}
+main .section-1 .box-middle .photo-group .links-sites .link-one {
   width: 2rem;
   border-radius: 100%;
+  padding: 1px;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 10;
+}
+main .section-1 .box-middle article {
+  width: 400px;
+}
+main .section-1 .box-middle article h3 {
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  main .section-1 .box-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .section-1 .box-middle article {
+    width: 100%; /* Ajusta o article para preencher todo o espaço */
+    position: relative;
+    bottom: 9rem;
+  }
+}
+main .section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #707070;
+}
+main .section-2 .box-middle {
+  width: 50%;
+}
+main .section-2 .box-middle .section-content-1 {
+  border-left: 5px solid black;
+  border-top-left-radius: 0px;
+}
+main .section-2 .box-middle ul {
+  padding: 10px;
+}
+main .section-2 .box-middle li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main .section-2 .box-middle li a {
+  color: #707070;
+}
+main .section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #434343;
+  color: #999999;
+}
+main .section-3 .box-middle {
+  width: 50%;
+}
+main .section-3 .box-middle .section-content-1 {
+  border-left: 5px solid white;
+  border-top-left-radius: 0px;
+}
+main .section-3 .box-middle ul {
+  padding: 10px;
+}
+main .section-3 .box-middle li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main .section-3 .box-middle li a {
+  color: #999999;
+}
+main .section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #707070;
+}
+main .section-4 .box-middle {
+  width: 50%;
+}
+main .section-4 .box-middle .projetos {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 2rem;
+}
+main .section-4 .box-middle .projetos .section-projetos {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+main .section-4 .box-middle .projetos .section-projetos img {
+  width: 100%;
+  height: auto;
+}
+main .section-4 .box-middle .projetos .section-projetos h5 {
+  margin: 0;
+}
+main .section-4 .box-middle .projetos .section-projetos div {
+  position: absolute;
+  bottom: 8px;
+  left: 28px;
+}
+main .section-4 .box-middle .projetos .section-projetos div button {
+  font-size: 10px;
+  background-color: #585858;
+  border: 0;
+  padding: 5px 7px 5px 7px;
+  border-radius: 5px;
+}
+main .section-4 .box-middle .projetos .section-projetos div button:hover {
+  background-color: rgb(54, 54, 129);
+  transition: 500ms;
+}
+main .section-4 .box-middle .projetos .section-projetos div button a {
+  text-decoration: none;
+  color: white;
+}
+main .section-4 .box-middle .projetos .section-projetos p {
+  font-size: 10px;
+  text-align: start;
+  padding: 3px;
 }
 
 html, body {
@@ -198,6 +384,6 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #DEDEDE;
   color: #333;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,38 +1,51 @@
 footer {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
   }
-  
+  .box-middle{
+    width: 50%;
+  }
   .section-footer {
     background: black;
     color: white;
-    @include flex-center;
-  
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .primeira-parte {
       flex-direction: column;
-  
+      margin-bottom: 1rem;
       p {
         text-align: left;
-        margin-top: 0;
+        margin-top: 1rem;
+        color: $color-text;
+        font-size: 12px;
       }
   
       .imagens-redes {
         padding-top: 1rem;
-        @include flex-center;
+        display: flex;
+        justify-content: start;
         gap: 1rem;
   
         picture {
-          text-align: center;
-  
+          text-align: center;  
           img {
-            width: 3rem;
+            width: 30px;
+            border-radius: 3px;
           }
   
           p {
-            font-size: small;
+            margin: 0;
+            font-size: 9px;
+            text-align: center;
+
           }
         }
       }
     }
+
   }
   

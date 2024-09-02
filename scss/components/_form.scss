@@ -1,21 +1,21 @@
 .form-ready {
+    display: flex;
     flex-direction: column;
     gap: 10px;
-  
+    width: 100%;
     label {
+      display: flex;
       flex-direction: column;
       position: relative;
-  
-      .input-label {
-        position: absolute;
-        left: 0;
-        font-size: 14px;
-        color: white;
+      overflow: hidden;
+      width: auto;
+      span{
+        text-transform: uppercase;
+        margin-top: 13px;
+        font-size: 10px;
       }
-  
-      input[type="text"] {
-        padding: 10px;
-        margin-top: 20px;
+      #nome4{
+        height: 50px
       }
     }
   
@@ -27,6 +27,13 @@
         color: white;
         border-radius: $border-radius;
         padding: 10px;
+        margin: 1rem 0rem 2rem 0rem;
+        border: 0;
+        cursor: pointer;
+        &:hover{
+          background-color: rgb(54, 54, 129);
+          transition: 500ms;
+        }
       }
     }
   }
